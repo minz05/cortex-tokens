@@ -5,9 +5,69 @@
 
 body {
   margin: 46px;
-  background: var(--cortex-grey001);
+  background: var(--grey000);
 }
 
 h1 {
   color: #fff;
+  margin-bottom: 46px;
+}
+
+.button-sets {
+  display: flex;
+  gap: 23px;
+}
+
+.button {
+  position: relative;
+  font-family: "Roboto";
+  border-style: none;
+  height: var(--button-md-height);
+  text-transform: var(--button-textcase);
+  font-weight: bold;
+  padding: 0 10px 0 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color 200ms;
+  transition-timing-function: cubic-bezier(
+    0.71,
+    0,
+    0.31,
+    1
+  ); /* 目前cortex所有的缓动动画基于这个参数 */
+}
+
+.button.button::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  border-radius: inherit;
+  box-shadow: 0 0 0 8px var(--green004);
+  opacity: 0;
+  transition: 400ms;
+}
+
+.button[type="primary"] {
+  border-color: transparent;
+  background: var(--green004);
+  color: #000000;
+}
+
+.button[type="primary"]:hover {
+  background: var(--green006);
+}
+
+.button[type="primary"]:active {
+  background: var(--green002);
+}
+
+.button.button:active {
+  filter: brightness(0.9);
+}
+
+.button.button:active::after {
+  transition: 0s;
+  box-shadow: none;
+  opacity: 0.9;
 }
