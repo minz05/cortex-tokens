@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Feb 2023 06:06:20 GMT
+ * Generated on Mon, 13 Feb 2023 06:18:29 GMT
  */
 
 :root {
@@ -108,25 +108,73 @@
   --cortex-search-width-active: 461;
   --cortex-cover-sm-width: 162;
   --cortex-cover-sm-height: 102;
-  --cortex-cover-album-box-shadow: [object Object];
+  --cortex-cover-album-box-shadow-x: 0;
+  --cortex-cover-album-box-shadow-y: 0;
+  --cortex-cover-album-box-shadow-blur: 10;
+  --cortex-cover-album-box-shadow-spread: 0;
+  --cortex-cover-album-box-shadow-color: #44D62C;
+  --cortex-cover-album-box-shadow-type: dropShadow;
   --cortex-cover-border-width: 2;
   --cortex-cover-md-width: 226;
   --cortex-cover-md-height: 130;
-  --cortex-cover-card-box-shadow: [object Object];
+  --cortex-cover-card-box-shadow-x: 0;
+  --cortex-cover-card-box-shadow-y: -1;
+  --cortex-cover-card-box-shadow-blur: 0;
+  --cortex-cover-card-box-shadow-spread: 0;
+  --cortex-cover-card-box-shadow-color: #545454;
+  --cortex-cover-card-box-shadow-type: innerShadow;
   --cortex-cover-card-hover: rgba(255,255,255,0.1);
-  --cortex-cover-title-sm: [object Object];
-  --cortex-cover-title-lg: [object Object];
-  --cortex-display: [object Object];
-  --cortex-display2: [object Object];
-  --cortex-large-title: [object Object];
-  --cortex-headline: [object Object];
-  --cortex-title: [object Object];
-  --cortex-body-sm: [object Object];
-  --cortex-body-md: [object Object];
-  --cortex-body-lg: [object Object];
-  --cortex-label-xs: [object Object];
-  --cortex-label-md: [object Object];
-  --cortex-label-sm: [object Object];
-  --cortex-label-lg: [object Object];
+  --cortex-cover-title-sm-font-family: RazerF5;
+  --cortex-cover-title-sm-font-weight: Bold;
+  --cortex-cover-title-sm-font-size: 14;
+  --cortex-cover-title-lg-font-family: RazerF5;
+  --cortex-cover-title-lg-font-weight: Bold;
+  --cortex-cover-title-lg-font-size: 20;
+  --cortex-display-font-family: RazerF5;
+  --cortex-display-font-weight: Bold;
+  --cortex-display-font-size: 40;
+  --cortex-display-text-case: uppercase;
+  --cortex-display2-font-family: RazerF5;
+  --cortex-display2-font-weight: Bold;
+  --cortex-display2-font-size: 32;
+  --cortex-display2-text-case: uppercase;
+  --cortex-large-title-font-family: RazerF5;
+  --cortex-large-title-font-weight: Bold;
+  --cortex-large-title-font-size: 24;
+  --cortex-large-title-text-case: uppercase;
+  --cortex-headline-font-family: RazerF5;
+  --cortex-headline-font-weight: Bold;
+  --cortex-headline-font-size: 20;
+  --cortex-headline-text-case: uppercase;
+  --cortex-title-font-family: RazerF5;
+  --cortex-title-font-weight: Bold;
+  --cortex-title-font-size: 16;
+  --cortex-body-sm-font-family: Roboto;
+  --cortex-body-sm-font-weight: Regular;
+  --cortex-body-sm-line-height: 16;
+  --cortex-body-sm-paragraph-spacing: 16;
+  --cortex-body-sm-font-size: 12;
+  --cortex-body-md-font-family: Roboto;
+  --cortex-body-md-font-weight: Regular;
+  --cortex-body-md-line-height: 18;
+  --cortex-body-md-font-size: 14;
+  --cortex-body-md-paragraph-spacing: 18;
+  --cortex-body-lg-font-family: Roboto;
+  --cortex-body-lg-font-weight: Regular;
+  --cortex-body-lg-line-height: 18;
+  --cortex-body-lg-font-size: 16;
+  --cortex-body-lg-paragraph-spacing: 18;
+  --cortex-label-xs-font-family: Roboto;
+  --cortex-label-xs-font-weight: Bold;
+  --cortex-label-xs-font-size: 9;
+  --cortex-label-md-font-family: Roboto;
+  --cortex-label-md-font-weight: Bold;
+  --cortex-label-md-font-size: 14;
+  --cortex-label-sm-font-family: Roboto;
+  --cortex-label-sm-font-weight: Bold;
+  --cortex-label-sm-font-size: 12;
+  --cortex-label-lg-font-family: Roboto;
+  --cortex-label-lg-font-weight: Bold;
+  --cortex-label-lg-font-size: 16;
   --cortex-ratings-size: 20;
 }
