@@ -4,8 +4,9 @@
 }
 
 body {
+  font-family: "Roboto";
   margin: 46px;
-  background: var(--grey000);
+  background: var(--grey001);
 }
 
 h1 {
@@ -16,12 +17,17 @@ h1 {
 .button-sets {
   display: flex;
   gap: 23px;
+  margin: 0 0 23px 0;
 }
+
+/*Styles for Buttons*/
 
 .button {
   position: relative;
   font-family: "Roboto";
+  background-color: transparent;
   border-style: none;
+  min-width: 65px;
   height: var(--button-md-height);
   text-transform: var(--button-textcase);
   font-weight: bold;
@@ -29,16 +35,13 @@ h1 {
   border-radius: var(--radius-sm);
   cursor: pointer;
   transform: scale(1);
-  transition: background-color 200ms;
-  transition-timing-function: cubic-bezier(
-    0.71,
-    0,
-    0.31,
-    1
+  transition: all 200ms;
+  transition-timing-function: var(
+    --standard-animation
   ); /* 目前cortex所有的缓动动画基于这个参数 */
 }
 
-.button.button::after {
+.button.button:not(:disabled)::after {
   position: absolute;
   inset: 0;
   content: "";
@@ -48,10 +51,12 @@ h1 {
   transition: 400ms;
 }
 
+/*Styles for Primary Buttons*/
+
 .button[type="primary"] {
   border-color: transparent;
   background: var(--green004);
-  color: #000000;
+  color: var(--grey000);
 }
 
 .button[type="primary"]:hover {
@@ -62,12 +67,62 @@ h1 {
   background: var(--green002);
 }
 
+.button[type="primary"]:disabled {
+  background: var(--grey003);
+  cursor: not-allowed;
+}
+
 .button.button:active {
   filter: brightness(0.9);
 }
 
-.button.button:active::after {
+.button.button:active:not([type="ghost"]):after {
   transition: 0s;
   box-shadow: none;
   opacity: 0.9;
+}
+
+/*Styles for Outline Buttons*/
+
+.button[type="outline"] {
+  color: var(--green004);
+  border: 1px solid var(--green004);
+}
+
+.button[type="outline"]:hover {
+  background: var(--button-outline-hover-color);
+}
+
+.button[type="outline"]:active {
+  background: transparent;
+  color: var(--green002);
+  border: 1px solid var(--green002);
+}
+
+.button[type="outline"]:disabled {
+  background: transparent;
+  color: var(--grey003);
+  border: 1px solid var(--grey003);
+  cursor: not-allowed;
+}
+
+/*Styles for Ghost Buttons*/
+
+.button[type="ghost"] {
+  color: var(--grey006);
+}
+
+.button[type="ghost"]:hover {
+  color: var(--grey012);
+}
+
+.button[type="ghost"]:active {
+  color: var(--green004);
+  background: var(--grey000);
+}
+
+.button[type="ghost"]:disabled {
+  background: transparent;
+  color: var(--grey003);
+  cursor: not-allowed;
 }
