@@ -126,3 +126,11 @@ h1 {
   color: var(--grey003);
   cursor: not-allowed;
 }
+
+/*Styles for discords*/
+
+.discord {
+  min-width: 226px;
+  height: var(--discord-height);
+  background: #fff;
+}
